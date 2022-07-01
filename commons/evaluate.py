@@ -35,6 +35,8 @@ if True:
         for score in scores:
             if(score[0]<=0.65):
                 print("Match found: difference= "+str(score[0])+" Match =: database_cattle"+(str(score[1]).split(sep="database_cattle")[1]).split(".")[0])
+                img2=Image.open(score[1])
+                img2.show("Match image")
                 break
         else :print("no match found")  
 
